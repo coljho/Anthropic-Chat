@@ -1,3 +1,7 @@
+# Saved local data 
+saved_chats.json 
+system_prompts.json 
+
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]
