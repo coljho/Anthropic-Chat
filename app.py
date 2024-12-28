@@ -148,7 +148,7 @@ def create_anthropic_client() -> anthropic.Anthropic:
 def get_llm_response(client: anthropic.Anthropic, messages: List[Dict[str, str]], system_prompt: str) -> str:
     """Get response from LLM given a message history and system prompt"""
     response = client.messages.create(
-        model="claude-3-opus-20240229",
+        model="claude-3-5-sonnet-20241022",
         max_tokens=1024,
         system=system_prompt,  # Pass system prompt directly
         messages=[m for m in messages if m["role"] != "system"]  # Filter out any system messages
